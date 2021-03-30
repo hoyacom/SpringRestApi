@@ -6,7 +6,7 @@ logging:
 spring:
   profiles: local
   datasource:
-    url: jdbc:h2:tcp://localhost/~/test
+    url: jdbc:h2:tcp://localhost/~/Local/Workspaces/kbet/2021_kbet_kie-mecs/data/test
     driver-class-name: org.h2.Driver
     username: sa
   jpa:

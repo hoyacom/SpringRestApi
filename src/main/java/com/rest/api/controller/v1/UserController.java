@@ -13,6 +13,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true) 가 Security설정에 되어 있으면
+ * 클래스 또는 메소드에 @Secured({"ROLE_USER","ROLE_ADMIN"}) , @Secured(ROLE_USER) 로 가능 또는 @PreAuthorize("hasRole('ROLE_USER')");
+ */
 @Api(tags = {"2. User"})
 @RequiredArgsConstructor
 @RestController
@@ -72,4 +76,3 @@ public class UserController {
         return responseService.getSuccessResult();
     }
 }
-

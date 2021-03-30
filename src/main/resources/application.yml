@@ -6,7 +6,7 @@ spring:
     encoding: UTF-8
   social:
     kakao:
-      client_id: XXXXXXXXXXXXXXXXXXXXXXXXXX # 앱생성시 받은 REST API 키
+      client_id: fb83f96c76db53c497f689fcebf3aec8 # 앱생성시 받은 REST API 키
       redirect: /social/login/kakao
       url:
         login: https://kauth.kakao.com/oauth/authorize

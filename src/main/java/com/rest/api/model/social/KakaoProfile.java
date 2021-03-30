@@ -10,6 +10,10 @@ import lombok.ToString;
 public class KakaoProfile {
     private Long id;
     private Properties properties;
+    private Properties kakao_account;
+
+    private static class Kakao_
+
 
     @Getter
     @Setter

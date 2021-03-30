@@ -19,6 +19,10 @@ public class HelloController {
         private String message;
     }
 
+    /**
+     *  화면에 helloworkd출력
+     * @return
+     */
     @GetMapping(value = "/helloworld/string")
     @ResponseBody
     public String helloworldString() {
@@ -27,6 +31,10 @@ public class HelloController {
         return HELLO;
     }
 
+    /**
+     * 객체 json출력
+     * @return
+     */
     @GetMapping(value = "/helloworld/json")
     @ResponseBody
     public Hello helloworldJson() {
@@ -35,6 +43,10 @@ public class HelloController {
         return hello;
     }
 
+    /**
+     * helloworld.ftl 내용 출력, helloword 이름으로 된 파일을 찾아서 출력 
+     * @return
+     */
     @GetMapping(value = "/helloworld/page")
     public String helloworld() {
         return "helloworld";
