@@ -12,9 +12,6 @@ public class KakaoProfile {
     private Properties properties;
     private Properties kakao_account;
 
-    private static class Kakao_
-
-
     @Getter
     @Setter
     @ToString
